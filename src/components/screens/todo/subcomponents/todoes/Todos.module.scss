@@ -1,0 +1,28 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 100%;
+    background-color: #ffffff;
+    padding: 24px;
+    margin: 24px 0 0 0;
+    border-radius: 14px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+
+    @media screen and (max-width: 412px) {
+        gap: 16px;
+        padding: 18px;
+        margin: 18px 0 0 0;
+    }
+}
+
+.todosCompleted {
+    opacity: 0.6;
+}
+
+.completed__title {
+    @media screen and (max-width: 412px) {
+        font-size: 14px;
+    }
+}

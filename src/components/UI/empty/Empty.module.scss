@@ -1,0 +1,43 @@
+.empty {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 24px 0;
+}
+
+.text {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 0;
+
+    font-weight: 500;
+    opacity: 0.8;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+
+        background-image: url('/icons/empty.svg');
+        background-position: center center;
+        background-size: cover;
+        width: 42px;
+        height: 42px;
+
+        opacity: 0.7;
+    }
+
+    @media screen and (max-width: 412px) {
+        font-size: 14px;
+        padding-top: 50px;
+
+        &::after {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
