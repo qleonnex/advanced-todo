@@ -35,6 +35,7 @@ const Todo = ({ id, title, setTodos }) => {
     const openModal = () => {
         setModal((prev) => ({ ...prev, isOpen: true }));
         closeDropdown();
+        document.querySelector('body').style.overflow = 'hidden';
     };
 
     const getModalValue = (value, setValue) => {

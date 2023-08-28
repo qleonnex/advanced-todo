@@ -12,6 +12,7 @@ const Modal = ({ children, data, modalState, setModalState, onClick, get }) => {
 
     function closeModal() {
         setClassSwitch([classes.modal, classes.hide]);
+        document.querySelector('body').style.overflow = 'visible';
 
         setTimeout(() => {
             setModalState((prev) => ({ ...prev, isOpen: false }));
