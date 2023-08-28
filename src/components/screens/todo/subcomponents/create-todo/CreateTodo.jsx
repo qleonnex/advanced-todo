@@ -7,7 +7,7 @@ const CreateTodo = ({ setTodos }) => {
     const createTodo = (e) => {
         e.preventDefault();
 
-        if (value.title !== '' && value.title !== ' ') {
+        if (value !== '' && value !== ' ') {
             setTodos((prev) => [
                 ...prev,
                 { id: Date.now(), title: value, isCompleted: false }
