@@ -7,15 +7,12 @@ const Todos = ({ todos, setTodos }) => {
     return (
         <>
             <div className={classes.todos}>
-                {!!todos.filter((todo) => !todo.isCompleted).length ? (
-                    todos
-                        .filter((todo) => !todo.isCompleted)
-                        .map((todo) => (
-                            <Todo key={todo.id} {...todo} setTodos={setTodos} />
-                        ))
-                ) : (
-                    <Empty />
-                )}
+                {!todos.filter((todo) => !todo.isCompleted).length && <Empty />}
+                {todos
+                    .filter((todo) => !todo.isCompleted)
+                    .map((todo) => (
+                        <Todo key={todo.id} {...todo} setTodos={setTodos} />
+                    ))}
             </div>
             {!!todos.filter((todo) => todo.isCompleted).length && (
                 <div
