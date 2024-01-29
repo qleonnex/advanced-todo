@@ -8,4 +8,4 @@ The builder that I used to create this application is [Vite](https://vitejs.dev)
 
 ### [ ℹ️ ] Additionally
 
-No libraries were used, everything was done by hand. Used Tailwind with its built-in @apply function
+No libraries were used, everything was done by hand.
