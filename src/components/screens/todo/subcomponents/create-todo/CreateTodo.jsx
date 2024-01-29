@@ -7,7 +7,7 @@ const CreateTodo = ({ setTodos }) => {
     const createTodo = (e) => {
         e.preventDefault();
 
-        if (value !== '' && value !== ' ') {
+        if (value && value.includes(" ", 0)) {
             setTodos((prev) => [
                 ...prev,
                 { id: Date.now(), title: value, isCompleted: false }
@@ -19,9 +19,7 @@ const CreateTodo = ({ setTodos }) => {
     return (
         <form className={classes.form} onSubmit={createTodo}>
             <input
-                onChange={(e) => {
-                    setValue(e.target.value);
-                }}
+                onChange={(e) => setValue(e.target.value)}
                 value={value}
                 className={classes.form__input}
                 type="text"

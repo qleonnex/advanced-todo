@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react';
-import Modal from '../../../../UI/modal/Modal';
-import classes from './Todo.module.scss';
+
 import Checkbox from '../../../../UI/checkbox/Checkbox';
+import Modal from '../../../../UI/modal/Modal';
 import ChangeInputModal from '../../../../UI/modal/templates/ChangeInputModal';
+import classes from './Todo.module.scss';
 
 const Todo = ({ id, title, setTodos }) => {
     const [modal, setModal] = useState({ isOpen: false, linkedID: id });

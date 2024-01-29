@@ -1,5 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import App from './components/screens/todo/App';
-import './assets/styles/global.scss';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+import './assets/styles/global.scss';
+import App from './components/screens/todo/App';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<App />
+);

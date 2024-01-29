@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import Todos from './subcomponents/todoes/Todos';
+
 import classes from './App.module.scss';
 import CreateTodo from './subcomponents/create-todo/CreateTodo';
+import Todos from './subcomponents/todoes/Todos';
 
 const App = () => {
     const [todos, setTodos] = useState([]);
+    
     const todoLength = todos.filter(
         (todo) => todo.isCompleted === false
     ).length;

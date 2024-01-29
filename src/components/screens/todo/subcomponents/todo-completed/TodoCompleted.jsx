@@ -4,13 +4,21 @@ import classes from '../todo/Todo.module.scss';
 const TodoCompleted = ({ id, title, setTodos }) => {
     const changeIsCompleted = () => {
         setTimeout(() => {
-            setTodos((prev) => prev.filter((todo) => todo.id !== id));
-            setTodos((prev) => [...prev, { id, title, isCompleted: false }]);
+            setTodos((prev) => 
+                prev.filter((todo) => todo.id !== id)
+            );
+            
+            setTodos((prev) => [
+                ...prev, 
+                { id, title, isCompleted: false }]
+            );
         }, 500);
     };
 
     const removeTodo = (id) => {
-        setTodos((prev) => prev.filter((todo) => todo.id !== id));
+        setTodos((prev) => 
+            prev.filter((todo) => todo.id !== id)
+        );
     };
 
     return (

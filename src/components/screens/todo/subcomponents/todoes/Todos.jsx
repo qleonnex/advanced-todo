@@ -1,6 +1,6 @@
+import Empty from '../../../../UI/empty/Empty';
 import TodoCompleted from '../todo-completed/TodoCompleted';
 import Todo from '../todo/Todo';
-import Empty from '../../../../UI/empty/Empty';
 import classes from './Todos.module.scss';
 
 const Todos = ({ todos, setTodos }) => {
