@@ -37,7 +37,7 @@ const App = () => {
                 <div className={classes.made__by}>
                     <a href="https://t.me/qleonnex" target="_blank">
                         <img
-                            src="/made-by.svg"
+                            src="./made-by.svg"
                             alt="made by Leonnex"
                             draggable="false"
                         />
