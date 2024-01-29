@@ -22,7 +22,7 @@ const Todo = ({ id, title, setTodos }) => {
     const editTodo = () => {
         setTodos((prev) =>
             prev.map((todo) => {
-                if (todo.id === id) {
+                if (todo.id === id && modalValue[0] && !modalValue[0].includes(" ", 0)) {
                     todo.title = modalValue[0];
                 }
 
