@@ -7,7 +7,7 @@ const CreateTodo = ({ setTodos }) => {
     const createTodo = (e) => {
         e.preventDefault();
 
-        if (value && value.includes(" ", 0)) {
+        if (value && !value.includes(" ", 0)) {
             setTodos((prev) => [
                 ...prev,
                 { id: Date.now(), title: value, isCompleted: false }

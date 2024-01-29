@@ -16,9 +16,8 @@ const Todos = ({ todos, setTodos }) => {
             </div>
             {!!todos.filter((todo) => todo.isCompleted).length && (
                 <div
-                    className={[classes.todos, classes.todosCompleted].join(
-                        ' '
-                    )}
+                    className={[classes.todos, classes.todosCompleted].join(' ')}
+                    style={{ maxHeight: 242 }}
                 >
                     <p className={classes.completed__title}>
                         Выполненные планы:
